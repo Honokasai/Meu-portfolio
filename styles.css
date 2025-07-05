@@ -1,0 +1,19 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.container { padding: 20px; }
+.menu { display: flex; list-style: none; gap: 15px; background: #333; padding: 10px; }
+.menu li a { color: white; text-decoration: none; }
+footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 40px; }
+@media screen and (max-width: 768px) {
+  .menu { flex-direction: column; }
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+}
+.intro { animation: fadeIn 1.5s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+form label, form input, form textarea { display: block; width: 100%; margin-bottom: 10px; }
+.projetos { list-style: disc; margin-left: 20px; }
